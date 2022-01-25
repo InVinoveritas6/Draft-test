@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Multiple Select [Test task OZiTAG]</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <h1 class="title">Your code...</h1>
+   <input type="text" id="inputSearch" placeholder="Search.." title="Type in a category">
+
+   <div id="f">
+      <select name="customer" multiple class="visually-hidden">
+         <option value="10">
+            Паша
+         </option>
+         <option value="20">
+            Ева
+         </option>
+         <option value="30">
+            Даша
+         </option>
+         <option value="40">
+            Олег
+         </option>
+      </select>
+   </div>
+
+   <button class="button">
+      <span class="text">Применить</span>
+   </button>
+
+   <div class="form_label">
+      <span class="form_text">Your technology</span>
+      <div class="multiselect_block">
+         <label for="select-1" class="field_multiselect">Technology</label>
+         <input id="checkbox-1" class="multiselect_checkbox" type="checkbox">
+         <!-- <select class="multiselect_label" name="technology" multiple>
+            <option value="all"> all </option>
+         </select> -->
+         <label for="checkbox-1" class="multiselect_label"></label>
+         <select id="select-1" class="field_select" name="technology" multiple
+            style="@media (min-width: 768px) { height: calc(4 * 38px)}">
+            <option value="all">All</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">Java Script</option>
+         </select>
+         <span class="field_multiselect_help">You can select several items by pressing <b>Ctrl(or
+               Command)+Element</b></span>
+      </div>
+      <span class="error_text"></span>
+      <script src="js/script.js"></script>
+</body>
+
+</html>

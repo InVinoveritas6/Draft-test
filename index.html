@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8" />
+   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Multiple Select [Test task OZiTAG]</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+   <!-- <div id="f" class="blockSelect">
+      <h1 class="title"> Тендеры в роли Заказчика</h1>
+      <p data-modal class="showSelected">Показать выбранное</p>
+
+      <p class="title2"> Тендеры в роли Поставщика</p>
+      <input data-modal type="text" id="inputLink" placeholder="Код ОКРБ или наименование закупаемой продукции" title="Type in a category">
+   </div> -->
+
+   <div class="modal">
+      <div class="modal__dialog">
+         <div class="modal__content">
+            <div data-close class="modal__close">&times;</div>
+            <div class="prodacts">
+               <p>Ревлизуемые товары</p>
+            </div>
+            <input type="text" id="inputSearch" placeholder="Код ОКРБ или наименование закупаемой продукции"
+               title="Type in a category">
+            <form>
+               <!-- <div class="multiselect">
+                  <div class="selectBox"> -->
+               <i class="fa fa-angle-right" aria-hidden="true"></i>
+               <select id="select-1" name="customer" multiple class="visually-hidden">
+                  <option value="10" selected>
+                     [A] - Продукция сельского хозяйства, лесного хозяйства
+                     рыбоводства и рыболовства
+                  </option>
+                  <option value="11">
+                     [О] - Услуги в области государственного управления и обороны,
+                     предоставляемые обществу в целом; услуги по обязательному
+                     социальному страхованию
+                  </option>
+                  <option value="12" data-level="2">
+                     [84] - Услуги в области государственного управления и обороны,
+                     предоставляемые обществу в целом; услуги по обязательному
+                     социальному страхованию
+                  </option>
+                  <option value="13" data-level="3" selected>
+                     [84.1] - Услуги в области государственного управления общего
+                     характера и социально-экономической сфере
+                  </option>
+                  <option value="14" data-level="4">
+                     [84.11] - Услуги в области государственного управления общего
+                     характера
+                  </option>
+                  <option value="15" data-level="5">
+                     [84.11.11] - Услуги в области исполнительной и законодательной
+                     деятельности
+                  </option>
+                  <option value="16" data-level="6">
+                     [84.11.11.100] - Услуги центральных органов исполнительной и
+                     законодательной власти
+                  </option>
+                  <option value="17" data-level="6">
+                     [84.11.11.200] - Услуги органов управления и самоуправления
+                     областного территориального уровня
+                  </option>
+                  <option value="18" data-level="6">
+                     [84.11.11.300] - Услуги органов управления и самоуправления
+                     базового территориального уровня
+                  </option>
+                  <option value="19" data-level="5">
+                     [84.11.11] - Услуги в области исполнительной и законодательной
+                     деятельности
+                  </option>
+                  <option value="20">
+                     [A] - Продукция сельского хозяйства, лесного хозяйства
+                     рыбоводства и рыболовства
+                  </option>
+                  <option value="21">
+                     [О] - Услуги в области государственного управления и обороны,
+                     предоставляемые обществу в целом; услуги по обязательному
+                     социальному страхованию
+                  </option>
+                  <option value="22" data-level="2">
+                     [84] - Услуги в области государственного управления и обороны,
+                     предоставляемые обществу в целом; услуги по обязательному
+                     социальному страхованию
+                  </option>
+                  <option value="23" data-level="3">
+                     [84.1] - Услуги в области государственного управления общего
+                     характера и социально-экономической сфере
+                  </option>
+                  <option value="24" data-level="4">
+                     [84.11] - Услуги в области государственного управления общего
+                     характера
+                  </option>
+                  <option value="25" data-level="5">
+                     [84.11.11] - Услуги в области исполнительной и законодательной
+                     деятельности
+                  </option>
+                  <option value="26" data-level="6">
+                     [84.11.11.100] - Услуги центральных органов исполнительной и
+                     законодательной власти
+                  </option>
+                  <option value="27" data-level="6">
+                     [84.11.11.200] - Услуги органов управления и самоуправления
+                     областного территориального уровня
+                  </option>
+                  <option value="28" data-level="6">
+                     [84.11.11.300] - Услуги органов управления и самоуправления
+                     базового территориального уровня
+                  </option>
+               </select>
+               <!-- </div>
+               </div> -->
+
+               <!-- <div class=overSelect></div> -->
+               <div id="checkboxes">
+                  <lable for="one">
+                     <input type="checkbox" id="one" />
+                     <!-- First checkbox -->
+                  </lable>
+                  <lable for="two">
+                     <input type="checkbox" id="two" />
+                     <!-- Two checkbox -->
+                  </lable>
+                  <lable for="three">
+                     <input type="checkbox" id="tree" />
+                     <!-- Three checkbox -->
+                  </lable>
+                  <lable for="four">
+                     <input type="checkbox" id="four" />
+                     <!-- Four checkbox -->
+                  </lable>
+                  <lable for="five">
+                     <input type="checkbox" id="five" />
+                     <!-- Five checkbox -->
+                  </lable>
+                  <lable for="six">
+                     <input type="checkbox" id="six" />
+                     <!-- Six checkbox -->
+                  </lable>
+                  <lable for="seven">
+                     <input type="checkbox" id="seven" />
+                     <!-- Seven checkbox -->
+                  </lable>
+                  <lable for="eight">
+                     <input type="checkbox" id="eight" />
+                     <!-- Eight checkbox -->
+                  </lable>
+                  <lable for="nine">
+                     <input type="checkbox" id="nine" />
+                     <!-- Nine checkbox -->
+                  </lable>
+               </div>
+               <button class="btn">
+                  <p>ПРИМЕНИТЬ</p>
+               </button>
+               <button class="btn1">Очистить</button>
+
+            </form>
+         </div>
+      </div>
+   </div>
+   <!-- 
+   <select name="region" multiple class="visually-hidden">
+      <option value="0">Все объекты</option>
+      <option value="1" selected>Объект 1</option>
+      <option value="2">Объект 2</option>
+      <option value="3">Объект 3</option>
+      <option value="4" selected>Объект 4</option>
+      <option value="5">Объект 5</option>
+      <option value="6" selected>Объект 6</option>
+   </select> -->
+
+   <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: rgb(48, 47, 47);
+
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.blockSelect {
+  position: relative;
+  top: 250px;
+  width: 835px;
+  height: auto;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.title {
+  display: inline-block;
+  padding: 17px 200px 2px 22px;
+  font-family: Source Sans Pro;
+  vertical-align: top;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #272526;
+
+}
+
+.showSelected {
+  display: inline-block;
+  padding: 20px 23px 0px 216px;
+  font-family: Source Sans Pro;
+  vertical-align: top;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: right;
+  color: #035B77;
+  cursor: pointer
+}
+
+.visually-hidden {
+  margin: 11px 23px 18px 30px;
+  width: 521px;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  border-left: 1px dashed #D9D9D9;
+}
+
+option {
+  display: none;
+  height: 20px;
+  max-width: 521px;
+  left: 78px;
+  top: 30px;
+  word-break: break-all;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+option:first-child {
+  display: block;
+}
+
+.title2 {
+  display: block;
+  padding: 14px 382px 14px 22px;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #272526;
+}
+
+#inputLink {
+  margin: 0px 23px 18px 22px;
+  width: 788px;
+  height: 38px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #D9D9D9;
+  position: relative;
+}
+
+#inputSearch {
+  margin: 17px 20px 17px -17px;
+  width: 600px;
+  height: 46px;
+  overflow: hidden;
+  border-radius: 4px;
+  border: 1px solid #D9D9D9;
+}
+
+.level_1 {
+  display: block;
+  margin: 0px 41px 0px 17px;
+  word-wrap: break-word;
+  top: 30px;
+  border-left: 1px dashed #D9D9D9;
+
+}
+
+.level_2 {
+  display: block;
+  margin: 0px 41px 0px 24px;
+  overflow-wrap: break-word;
+  top: 30px;
+  border-left: 1px dashed #D9D9D9;
+
+}
+
+.level_3 {
+  display: block;
+  margin: 0px 41px 0px 41px;
+  top: 30px;
+  border-left: 1px dashed #D9D9D9;
+
+}
+
+.level_4 {
+  display: block;
+  margin: 0px 41px 0px 55px;
+  top: 30px;
+  border-left: 1px dashed #D9D9D9;
+
+}
+
+.level_5 {
+  display: block;
+  margin: 0px 41px 0px 72px;
+  top: 30px;
+  border-left: 1px dashed #D9D9D9;
+
+}
+
+.level_6 {
+  display: block;
+  margin: 0px 41px 0px 86px;
+  top: 30px;
+  border-left: 1px dashed #D9D9D9;
+
+}
+
+.level_7 {
+  display: block;
+  margin: 0px 41px 0px 86px;
+  top: 30px;
+  border-left: 1px dashed #D9D9D9;
+
+}
+
+.level_8 {
+  display: block;
+  margin: 0px 41px 0px 86px;
+  top: 30px;
+  border-left: 1px dashed #D9D9D9;
+
+}
+
+.level_9 {
+  display: block;
+  margin: 0px 41px 0px 72px;
+  top: 30px;
+  border-left: 1px dashed #D9D9D9;
+
+}
+
+/* .multiselect {
+  margin: 0px 0px 0px -20px;
+  width: 50px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #d05858 solid;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+} */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, .5)
+}
+
+.modal__dialog {
+  position: relative;
+  width: 640px;
+  height: 450px;
+  margin: 40px auto
+}
+
+.modal__content {
+  position: relative;
+  width: 100%;
+  padding: 40px;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, .2);
+  border-radius: 4px;
+  height: 100%;
+  overflow-y: auto
+}
+
+.modal__close {
+  position: absolute;
+  top: 21px;
+  left: 23px;
+  height: 18.386884689331055px;
+  width: 15px;
+  opacity: .5;
+  border: none;
+  background-image: url(/img/Vector.png);
+  cursor: pointer
+}
+
+.prodacts {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  height: 25.281967163085938px;
+  width: 172px;
+  border-radius: nullpx;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 550px;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+
+}
+
+.modal__title {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase
+}
+
+/* .modal .btn {
+  position: absolute;
+  height: 40px;
+  width: 121px;
+  left: 20px;
+  bottom: 10px;
+  border-radius: 4px;
+  background: #035B77;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #FFF;
+  cursor: pointer
+} */
+
+.modal .btn1 {
+  position: absolute;
+  height: 18px;
+  width: 60px;
+  right: 20px;
+  bottom: 21px;
+  border-radius: nullpx;
+  opacity: 60%;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: right;
+  background-color: #fff;
+  cursor: pointer
+}
+
+.show {
+  display: block
+}
+
+.hide {
+  display: none
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.1;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.level_2 .level_3 .level_4 .level_5
+/* // применить псевдо классэктив на оптион 
+бокс шадоу на текст  
+псеводэлемент бефор для галочек и точек перед оптионал
+акшион + бефор для замены кружка на галочку 
+попрообовать позитион релатив
+з индекс чтобы выпадающий список был поерх*/
